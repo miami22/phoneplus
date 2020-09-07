@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+    <resources>
+
+    <!-- Base application theme. -->
+
+
+
+    <style parent="Theme.AppCompat.Light.NoActionBar" name="AppTheme">
+
+    <!-- Customize your theme here. -->
+
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    <item name="colorAccent">@color/colorPrimary</item>
+
+    <item name="colorControlHighlight">@color/gray</item>
+
+    <item name="actionModeStyle">@style/CustomActionModeStyle</item>
+
+    <item name="android:actionMenuTextColor">@color/confirm</item>
+
+</style>
+
+
+    -<style name="newcontxt">
+
+    <item name="android:layout_marginStart">10dp</item>
+
+    <item name="android:layout_marginEnd">10dp</item>
+
+    <item name="android:layout_marginTop">10dp</item>
+
+</style>
+
+
+    -<style parent="Base.Widget.AppCompat.ActionMode" name="CustomActionModeStyle">
+
+    <item name="background">@color/actionmode</item>
+
+    <item name="titleTextStyle">@style/CustomeActionModeTextStyle</item>
+
+    <item name="android:textColor">@color/lightblue</item>
+
+    <item name="android:actionModeCloseDrawable">@drawable/uncheck</item>
+
+</style>
+
+
+    -<style parent="TextAppearance.AppCompat.Widget.ActionMode.Title" name="CustomeActionModeTextStyle">
+
+    <item name="android:textSize">14sp</item>
+
+    <item name="android:textColor">@color/white</item>
+
+    <item name="android:fontFamily">@font/vazir</item>
+
+</style>
+
+</resources>

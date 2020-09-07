@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    android:background="@drawable/backmessage"
+    android:padding="10dp"
+    tools:context=".Fragment.help"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txthelp"
+            android:fontFamily="@font/nyekan"
+            android:textColor="#fff"
+            android:text="@string/help"/>
+    </ScrollView>
+
+
+</LinearLayout>

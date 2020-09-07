@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "678445322748",
+    "firebase_url": "https://phoneplus-c2cb6.firebaseio.com",
+    "project_id": "phoneplus-c2cb6",
+    "storage_bucket": "phoneplus-c2cb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678445322748:android:82b11504ac85d94e",
+        "android_client_info": {
+          "package_name": "com.parhamcodeappsgmail.phoneplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678445322748-v7ttmlshubkg3cp92iseuq2lld416v4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHCibLqV5uloDLT2q_Dtke9jjUhAa1GDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678445322748-v7ttmlshubkg3cp92iseuq2lld416v4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

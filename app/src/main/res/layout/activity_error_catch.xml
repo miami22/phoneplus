@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ErrorCatch"
+    android:background="@color/mainback"
+    android:id="@+id/errorcontainer"
+    android:padding="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/vazir"
+        android:text="متاسفانه خطایی در برنامه رخ داد\n
+لطفا برای کمک به رفع مشکل دکمه ارسال خطا در پایین را فشار دهید"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/to"
+        android:background="@drawable/backrectangle"
+        android:padding="40dp"
+        android:textColor="#fff"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/to"
+        app:layout_constraintEnd_toEndOf="parent">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="بازگشت"
+            android:id="@+id/ret"
+            android:gravity="center"
+            android:layout_marginEnd="60dp"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="ارسال خطا با ایمیل"
+            android:id="@+id/erroremail"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

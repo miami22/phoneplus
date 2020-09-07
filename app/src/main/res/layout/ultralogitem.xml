@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:id="@+id/ulogitem">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".48" />
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/v3"
+        app:layout_constraintGuide_percent=".85"/>
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/v4"
+        app:layout_constraintGuide_percent=".93"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="saat"
+            android:id="@+id/Udate"
+            android:textColor="#d9d9d9"
+            android:textSize="14sp"
+            android:fontFamily="@font/iransans"
+            app:layout_constraintEnd_toEndOf="@id/v2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saat"
+        android:id="@+id/Udur"
+        android:textColor="#d9d9d9"
+        android:textSize="14sp"
+        android:fontFamily="@font/iransans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saat"
+        android:id="@+id/Utime"
+        android:textColor="#d9d9d9"
+        android:textSize="14sp"
+        android:fontFamily="@font/iransans"
+        app:layout_constraintEnd_toEndOf="@id/v1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حسینیان"
+            android:id="@+id/Uname"
+            android:textColor="#d9d9d9"
+            android:textSize="17sp"
+            android:fontFamily="@font/iransans"
+            app:layout_constraintEnd_toEndOf="@id/v3"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:maxLength="14"
+            />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:id="@+id/Usim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/Utype"
+            app:layout_constraintEnd_toEndOf="@id/v4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Start.start2">
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".20"
+        android:id="@+id/guide"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/talking2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide"
+        android:id="@+id/talk"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/talk"
+        android:text="نرم افزار برای دسترسی به مخاطبین و برقراری تماس به مجوز نیاز خواهد داشت \n
+لطفا برای ادامه مجوزهای خواسته شده را به برنامه بدهید"
+        android:fontFamily="@font/vazir"
+        android:textColor="@color/darktgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/texxt"
+        android:paddingEnd="7dp"
+        android:paddingStart="7dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="دادن مجوز"
+        app:layout_constraintTop_toBottomOf="@+id/texxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/backbutton"
+        android:fontFamily="@font/vazir"
+        android:id="@+id/giveper"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

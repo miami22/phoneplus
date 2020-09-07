@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/logseperator"
+        android:text="دوشنبه "
+        android:gravity="center"
+        android:fontFamily="@font/byekan"
+        android:textSize="16sp"
+        android:textColor="@color/orange"
+        android:visibility="visible"
+        android:background="@drawable/simpleback"
+
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/view_background1log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/confirm"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/delete_icon1log"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/phonewhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/delete_icon1log"
+                android:text="تماس"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:id="@+id/txtfix1log"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/view_backgroundlog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/snackback"
+           >
+
+            <ImageView
+                android:id="@+id/delete_icon"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/rejcallwhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/delete_icon"
+                android:text="اضافه کردن به لیست سیاه"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/loggitemlay"
+            android:baselineAligned="false"
+            android:background="@color/mainback"
+            android:padding="5dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="saat"
+                    android:id="@+id/logdates"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#d9d9d9"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/iransans"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logtimes"
+                    android:text="salam"
+                    android:textColor="#d9d9d9"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/iransans"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end"
+                    android:layout_marginEnd="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="نام کاربر"
+                        android:fontFamily="@font/vazir"
+                        android:textSize="14sp"
+                        android:layout_gravity="right"
+                        android:id="@+id/logsimnum"
+                        android:textColor="#fff"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:id="@+id/logdurations"
+                        android:text="salam"
+                        android:fontFamily="@font/bhoma"
+                        android:textColor="#bfbfbf"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_height="43dp"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:layout_gravity="right"
+                        android:id="@+id/imglogsim"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="right"
+                        android:id="@+id/imglogtype"
+                        android:layout_marginTop="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                app:civ_border_width="4dp"
+                app:civ_border_color="#6c6c6c"
+                android:src="@drawable/imov"
+                android:id="@+id/logavatar"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                />
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:id="@+id/logtxtavatar"
+                android:background="@drawable/backcircle"
+                android:textColor="#f2f2f2"
+                android:gravity="center"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:src="@drawable/check"
+                android:id="@+id/logcheck"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <ViewStub
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logviewstub"
+        android:layout="@layout/conitemprop"/>
+
+
+
+</LinearLayout>

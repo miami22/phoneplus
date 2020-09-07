@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingTop="10dp"
+    android:background="#212233"
+    android:focusableInTouchMode="true"
+    android:id="@+id/maincontainer"
+    >
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/mainprogress"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/newlay"
+        android:layout_margin="10dp">
+        <android.support.v7.widget.SearchView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:background="@drawable/searchback"
+            android:id="@+id/searchtxt"
+            android:drawableEnd="@drawable/search"
+            android:textColorHint="#d1d1d1"
+            android:padding="6dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/logcheck"
+            android:src="@drawable/unlimit"
+            android:layout_marginStart="10dp"
+
+            />
+    </LinearLayout>
+
+
+
+
+    <!--
+     <com.luseen.spacenavigation.SpaceNavigationView
+         android:id="@+id/space"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_gravity="bottom"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:active_item_color="@color/colorAccent"
+         app:centre_button_color="@color/centre_button_color"
+         app:inactive_item_color="@color/white"
+         app:space_background_color="#fa171821"
+         app:centre_button_icon="@drawable/pluss"
+         app:space_item_icon_size="@dimen/space_item_icon_default_size"
+         app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+         app:space_item_text_size="@dimen/space_item_text_default_size"
+         />
+      -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/newlay"
+        android:id="@+id/tabcontainer">
+
+
+
+        <android.support.design.widget.TabLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/tablayoutC"
+            app:tabIndicatorColor="#ffffff"
+
+            android:background="@drawable/tablayout_background"
+            android:layout_margin="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tabMode="scrollable"
+            app:tabBackground="@drawable/tablayout_selector"
+            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabPaddingStart="16dp"
+            app:tabPaddingEnd="16dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabRippleColor="@null">
+
+
+        </android.support.design.widget.TabLayout>
+
+
+        <!--
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewpagerC"
+            app:layout_constraintTop_toBottomOf="@id/searchtxt"
+            >
+
+        </android.support.v4.view.ViewPager>
+        -->
+        <com.parhamcodeappsgmail.phoneplus.CustomViewPager
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tablayoutC"
+            android:id="@+id/viewpagercc"
+            android:layout_marginTop="6dp"
+            tools:ignore="MissingConstraints">
+        </com.parhamcodeappsgmail.phoneplus.CustomViewPager>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottomlayout">
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".50" />
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".25"
+            android:id="@+id/g1"/>
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".75"
+            android:id="@+id/g2"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gradback2"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/dialercr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/g1"
+            android:id="@+id/dial"
+            android:padding="6dp"
+            android:layout_marginBottom="1dp"
+
+             />
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/settcrfin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/g2"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/sett"
+            android:padding="6dp"
+
+            />
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/plusbut"
+            android:id="@+id/add"
+            android:padding="2dp"
+            android:layout_marginBottom="8dp"
+
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/bottomlayout"
+        android:visibility="gone"
+        android:id="@+id/adlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ir.tapsell.sdk.bannerads.TapsellBannerView
+            android:id="@+id/banner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tapsell_banner_type="banner_320x50"
+            app:tapsell_zone_id="59a27ab94684655433e74ef8"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clear2"
+            android:id="@+id/clearadd"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

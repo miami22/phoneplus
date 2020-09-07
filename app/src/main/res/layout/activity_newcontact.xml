@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newcontact">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#e2e2e2"
+        android:id="@+id/head"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent"
+      >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="ذخیره"
+            android:id="@+id/Nsave"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:textColor="#ff7105"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="لغو"
+            android:id="@+id/Ncancel"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:textColor="#ff7105"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/head"
+        android:background="#afafb1bc">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#3e3e3e"
+            android:layout_gravity="center"
+            android:src="@drawable/camer2"
+            android:layout_marginTop="15dp"
+            android:id="@+id/eavatar"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:id="@+id/Nname"
+            android:hint="نام"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:hint="شماره اصلی"
+            android:id="@+id/Np1"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اطلاعات اختیاری:"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:hint="شماره دوم"
+            android:id="@+id/Np2"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:hint="شماره سوم"
+            android:id="@+id/Np3"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:hint="آدرس"
+            android:id="@+id/Nadd"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:text="تعیین تاریخ برای یادآوری مناسبت خاص مخاطب"
+            android:textSize="17sp"
+
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:id="@+id/Ndate"
+                />
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/clear"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/clear"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="انتخاب تاریخ"
+                android:fontFamily="@font/iransans"
+                android:textColor="#202020"
+                android:id="@+id/Nchosedate"
+                android:background="@drawable/backbutton"
+                android:layout_marginEnd="15dp"
+                />
+
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:hint="عنوان  یادآوری"
+            android:id="@+id/Ndatetitle"
+            android:maxLength="50"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:hint="آدرس ایمیل"
+            android:id="@+id/Nemail"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:hint="آی دی اینستاگرام"
+            android:id="@+id/Ninsta"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:hint="آی دی تلگرام"
+            android:id="@+id/Ntele"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/newcontxt"
+            android:hint="توضیحات"
+            android:id="@+id/Ninfo"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

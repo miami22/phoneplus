@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialpad"
+    android:background="#EB0D2133"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    tools:context=".Fragment.dialpad"
+    android:clickable="true"
+    android:focusable="true"
+    android:windowSoftInputMode="adjustPan"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/screenlay"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+        <EditText
+            android:id="@+id/screen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="#fff"
+            android:fontFamily="@font/vazir"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/hor1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ver6"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            />
+        <ImageView
+            android:id="@+id/backs"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/backspace"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            tools:ignore="ContentDescription"
+            android:layout_marginEnd="6dp"/>
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-15dp">
+        <android.support.constraint.Guideline
+            android:id="@+id/ver1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent=".185"
+            app:layout_constraintStart_toEndOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/ver2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.365" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/ver3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".42" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/ver4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".60" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/ver5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/ver6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.815" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/hor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/hor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/hor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/hor4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.43" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/hor5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/hor6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.63" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/hor7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/hor8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.83" />
+        <android.support.constraint.Guideline
+            android:id="@+id/vera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.13"
+            />
+        <android.support.constraint.Guideline
+            android:id="@+id/verb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"
+            />
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:src="@drawable/starr"
+            app:layout_constraintEnd_toStartOf="@id/vera"
+            app:layout_constraintTop_toTopOf="@id/hor4"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/savecon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/savecon"
+            app:layout_constraintEnd_toStartOf="@id/vera"
+            app:layout_constraintTop_toTopOf="@id/hor2"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/hash"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:src="@drawable/hash"
+            app:layout_constraintEnd_toStartOf="@id/verb"
+            app:layout_constraintTop_toTopOf="@id/hor4"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:fontFamily="@font/btitr"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/one"
+            app:layout_constraintBottom_toTopOf="@id/hor2"
+            app:layout_constraintEnd_toStartOf="@id/ver2"
+            app:layout_constraintStart_toEndOf="@id/ver1"
+            app:layout_constraintTop_toBottomOf="@id/hor1"
+            android:clickable="true"
+            android:focusable="true"
+            tools:targetApi="lollipop"
+            tools:ignore="ContentDescription" />
+
+        <!--
+         <com.skyfishjy.library.RippleBackground
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            app:rb_color="#0099CC"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="3000"
+            app:rb_scale="6">
+
+        </com.skyfishjy.library.RippleBackground>
+         -->
+
+        <ImageView
+            android:id="@+id/b2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor2"
+            app:layout_constraintEnd_toStartOf="@id/ver4"
+            app:layout_constraintStart_toEndOf="@id/ver3"
+            app:layout_constraintTop_toBottomOf="@id/hor1"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/two"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor2"
+            app:layout_constraintEnd_toStartOf="@id/ver6"
+            app:layout_constraintStart_toEndOf="@id/ver5"
+            app:layout_constraintTop_toBottomOf="@id/hor1"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/three"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"        android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor4"
+            app:layout_constraintEnd_toStartOf="@id/ver4"
+            app:layout_constraintStart_toEndOf="@id/ver3"
+            app:layout_constraintTop_toBottomOf="@id/hor3"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/five"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor4"
+            app:layout_constraintEnd_toStartOf="@id/ver2"
+            app:layout_constraintStart_toEndOf="@id/ver1"
+            app:layout_constraintTop_toBottomOf="@id/hor3"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/four"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            android:fontFamily="@font/btitr"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor4"
+            app:layout_constraintEnd_toStartOf="@id/ver6"
+            app:layout_constraintStart_toEndOf="@id/ver5"
+            app:layout_constraintTop_toBottomOf="@id/hor3"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/six"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            android:fontFamily="@font/btitr"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor6"
+            app:layout_constraintEnd_toStartOf="@id/ver4"
+            app:layout_constraintStart_toEndOf="@id/ver3"
+            app:layout_constraintTop_toBottomOf="@id/hor5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/eight"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor6"
+            app:layout_constraintEnd_toStartOf="@id/ver2"
+            app:layout_constraintStart_toEndOf="@id/ver1"
+            app:layout_constraintTop_toBottomOf="@id/hor5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/seven"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor6"
+            app:layout_constraintEnd_toStartOf="@id/ver6"
+            app:layout_constraintStart_toEndOf="@id/ver5"
+            app:layout_constraintTop_toBottomOf="@id/hor5"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/nine"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b02"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttunback"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor8"
+            app:layout_constraintEnd_toStartOf="@id/ver6"
+            app:layout_constraintStart_toEndOf="@id/ver5"
+            app:layout_constraintTop_toBottomOf="@id/hor7"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/save"
+            tools:targetApi="lollipop"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b01"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttunback"
+            android:fontFamily="@font/btitr"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor8"
+            app:layout_constraintEnd_toStartOf="@id/ver2"
+            app:layout_constraintStart_toEndOf="@id/ver1"
+            app:layout_constraintTop_toBottomOf="@id/hor7"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/phone"
+            tools:targetApi="lollipop"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/b0"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            tools:targetApi="lollipop"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@id/hor8"
+            app:layout_constraintEnd_toStartOf="@id/ver4"
+            app:layout_constraintStart_toEndOf="@id/ver3"
+            app:layout_constraintTop_toBottomOf="@id/hor7"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/zero"
+            tools:ignore="ContentDescription" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</LinearLayout>

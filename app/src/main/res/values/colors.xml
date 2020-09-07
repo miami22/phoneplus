@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="snackback">#1a1919</color>
+    <color name="snacktext">#fc0127</color>
+    <color name="confirm">#53A650</color>
+    <color name="green">#10930c</color>
+    <color name="white">#fcfcfc</color>
+    <color name="whitetrans">#affcfcfc</color>
+    <color name="gray">#cfcece</color>
+    <color name="orange">#E19728</color>
+    <color name="nafti">#2c426e</color>
+    <color name="lightblue">#0187f4</color>
+    <color name="actionmode">#af141630</color>
+    <color name="mainback">#212233</color>
+    <color name="lightgray">#efefef</color>
+    <color name="darktgray">#6b6b6b</color>
+    <color name="likeblack">#212121</color>
+    <color name="transgray">#f37b7b7b</color>
+    <color name="transgraylight">#e9e2e2e2</color>
+    <color name="newblue">#3B8AEB</color>
+    <color name="sidebarred">#a10101</color>
+
+</resources>

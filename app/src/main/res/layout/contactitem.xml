@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:id="@+id/containerit">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        android:id="@+id/line"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height=".4dp"
+            android:background="#afecebeb"
+            android:layout_gravity="center"
+            android:id="@+id/lineg"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/btitr"
+            android:id="@+id/chr"
+            android:textSize="20sp"
+            android:textColor="#8D8C8C"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/view_background1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/confirm"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/delete_icon1"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/phonewhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/delete_icon1"
+                android:text="تماس"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:id="@+id/txtfix1"/>
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/snackback"
+        >
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/rejcallwhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="اضافه کردن به لیست سیاه"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:id="@+id/txtfix"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:visibility="visible"
+        android:id="@+id/view_foreground"
+        android:background="@color/mainback"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/itemlay"
+            android:baselineAligned="false"
+            android:background="?android:attr/selectableItemBackground"
+            >
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    app:civ_border_width="4dp"
+                    app:civ_border_color="#6c6c6c"
+                    android:src="@drawable/imov"
+                    android:id="@+id/Mavatar"
+                    android:gravity="center"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:id="@+id/txtavatar"
+                    android:background="@drawable/backcircle"
+                    android:textColor="#f2f2f2"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:src="@drawable/check"
+                    android:id="@+id/check"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نام کاربر"
+                    android:fontFamily="@font/vazir"
+                    android:textSize="14sp"
+                    android:layout_gravity="left"
+                    android:id="@+id/Mname"
+                    android:textColor="#fff"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:id="@+id/Mnumber"
+                    android:fontFamily="@font/bhoma"
+                    android:textColor="#bfbfbf"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ViewStub
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conviewstub"
+            android:layout="@layout/conitemprop"
+            />
+    </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+android {
+    compileSdkVersion 28
+    //buildToolsVersion '23.0.1' // IMPORTANT
+    defaultConfig {
+        applicationId "com.parhamcodeappsgmail.phoneplus"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 26
+        versionName "1.3.x"
+        multiDexEnabled true  // ALSO IMPORTANT
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "bazarkey", '"MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwC/wZaBcjuoXHVOTGHvKGmPwfetwpoz9l6y0IbZrbuNwPDSHvMm59YJugol4PHc8rdd88gzqrtjUVFQ7Dj1MYZ0NfvEiC9iSSwsNPhT8gFahH+J/JhKATq7WsbvISfoSpwUXfCpr5F/qqiaBG+JkVOImhIieAdvcbWBiQln8ODchHq3IY4stidKF0Do7SqYGa5v3c3aajzfOsOgQwOWt7cpHOYkeyKkLFsrREEDMj8CAwEAAQ=="'
+            buildConfigField "String", "myketkey", '"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCMP0BLPaOnoSNhkK3Y6z1EMF5IsgBxrcQTRxMlxjXp5VSJnrARGrvItn3TjnhzHz9dUKKOUoJXGybmY/WZYuSAV83sIbSxCjZwV0J2lZMxqNsjvjWgZVOVNYyRwfvpYfW6ILarnd3LTX8Ke2HgNOjpkHmpIylgB0vG7XUzZUNw3wIDAQAB"'
+            buildConfigField "String", "api", '"https://jsonstorage.net/api/items/9022464a-3fba-410d-98de-096acbee03b3"'
+        }
+        debug {
+            buildConfigField "String", "bazarkey", '"MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwC/wZaBcjuoXHVOTGHvKGmPwfetwpoz9l6y0IbZrbuNwPDSHvMm59YJugol4PHc8rdd88gzqrtjUVFQ7Dj1MYZ0NfvEiC9iSSwsNPhT8gFahH+J/JhKATq7WsbvISfoSpwUXfCpr5F/qqiaBG+JkVOImhIieAdvcbWBiQln8ODchHq3IY4stidKF0Do7SqYGa5v3c3aajzfOsOgQwOWt7cpHOYkeyKkLFsrREEDMj8CAwEAAQ=="'
+            buildConfigField "String", "myketkey", '"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCMP0BLPaOnoSNhkK3Y6z1EMF5IsgBxrcQTRxMlxjXp5VSJnrARGrvItn3TjnhzHz9dUKKOUoJXGybmY/WZYuSAV83sIbSxCjZwV0J2lZMxqNsjvjWgZVOVNYyRwfvpYfW6ILarnd3LTX8Ke2HgNOjpkHmpIylgB0vG7XUzZUNw3wIDAQAB"'
+            buildConfigField "String", "api", '"https://jsonstorage.net/api/items/9022464a-3fba-410d-98de-096acbee03b3"'
+        }
+    }
+
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        bazar {
+
+
+
+        }
+        myket {
+
+
+
+        }
+
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:support-core-utils:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    //implementation 'com.github.armcha:SpaceNavigationView:1.6.0'
+    //implementation 'com.gjiazhe:wavesidebar:1.3'
+    implementation project(':wavesidebar')
+    implementation 'com.android.support:recyclerview-selection:28.0.0'
+    implementation 'com.bignerdranch.android:recyclerview-multiselect:0.2'
+    implementation project(':ucrop')
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.mohamadamin:persianmaterialdatetimepicker:1.2.1'
+    //implementation 'com.kirianov.multisim:multisim:2.0@aar'
+    //implementation project(':android-dialer')
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation('com.github.thekhaeng:pushdown-anim-click:1.1.1') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'me.omidh:liquidradiobutton:1.0.01'
+    implementation 'ir.tapsell.sdk:tapsell-sdk-android:4.0.0'
+    implementation 'uk.co.samuelwall:material-tap-target-prompt:2.15.0'
+    //implementation 'com.github.Omega-R:OmegaRecyclerView:1.8.2@aar'
+    implementation 'com.yanzhenjie.recyclerview:support:1.3.2'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.firebase:firebase-storage:16.0.5'
+    implementation "com.google.dagger:dagger:2.20"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.20"
+//    implementation "android.arch.persistence.room:runtime:2.2.0-beta01"
+//    implementation "android.arch.persistence.room:compiler:2.2.0-beta01"
+    implementation "android.arch.paging:runtime:1.0.1"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation "android.arch.lifecycle:compiler:1.1.1"
+    implementation "android.arch.work:work-runtime:1.0.1"
+    configurations {
+        all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+    implementation 'io.noties:tumbleweed-android:2.0.0'
+
+
+}
